@@ -1,5 +1,5 @@
 """
-难度: 1
+难度: 1 未完成
 """
 from src import check
 
