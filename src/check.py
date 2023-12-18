@@ -8,12 +8,15 @@ def check(func: Callable[[], None]):
         func()
     except Exception as err:
         *_, traceback = exc_info()
-        for tb in extract_tb(traceback):
+        for tb in reversed(extract_tb(traceback)):
             if tb.name == 'raise_me':
                 print(f"success! \n"
                       f"Exception:\n"
                       f"  {err}\n"
-                      f"  at line {tb.lineno}: {tb.line}\n")
+                      f"  at line {tb.lineno}: {tb.line}")
+                break
+            elif tb.name == 'answer':
+                print(f"failed!")
                 break
         else:
             print('failed!')

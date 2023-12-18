@@ -7,6 +7,6 @@ def raise_me(alpha):
 
 
 @check
-def test():
+def answer():
     # write your answer here.
     ...
