@@ -6,6 +6,7 @@ from sys import exc_info
 def check(func: Callable[[], None]):
     try:
         func()
+        print('failed!')
     except Exception as err:
         *_, traceback = exc_info()
         for tb in reversed(extract_tb(traceback)):
