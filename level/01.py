@@ -9,4 +9,4 @@ def raise_me(alpha):
 @check
 def answer():
     # write your answer here.
-    ...
+    raise_me(1)
