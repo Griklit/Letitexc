@@ -1,3 +1,6 @@
+"""
+难度: 3
+"""
 from src import check
 
 
