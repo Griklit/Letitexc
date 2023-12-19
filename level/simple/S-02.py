@@ -1,6 +1,3 @@
-"""
-难度: 2
-"""
 from src import check
 
 
