@@ -15,7 +15,7 @@
 ## 示例
 
 ```python3
-# level/simple/S-01.py
+# level/easy/E-01.py
 from src import check
 
 
@@ -30,5 +30,5 @@ def answer():
 ```
 ```shell
 cd /Your-Path/Leitexc/
-python3.11 -m level.simple.S-01
+python3.11 -m level.easy.E-01
 ```
