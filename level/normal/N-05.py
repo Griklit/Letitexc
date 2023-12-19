@@ -4,7 +4,7 @@ from src import check
 def raise_me(alpha):
     flag = False
     try:
-        alpha(alpha)[alpha.alpha(alpha)(alpha[alpha])]()()(alpha.alpha.alpha[alpha])
+        alpha(alpha)[alpha.alpha(alpha)(alpha[alpha])]()()(alpha.alpha().alpha[alpha])
         flag = True
     except:
         pass
