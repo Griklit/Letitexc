@@ -4,8 +4,8 @@
 
 ## 规则
 
-- 使用标准python3.11运行
-- 仅允许在函数`answer`中编写代码
+- 使用正常一点的python3.11运行，其他版本或许也行
+- 仅允许在指定函数`answer`中编写代码
 - 除非关卡要求，否则禁止创建文件
 - 禁止使用诸如内存溢出、外部软件修改、宇宙高能粒子轰击内存位造成的极端异常
 - 不得重写`raise_me`函数，全局只能存在唯一一个关卡指定的`raise_me`函数
@@ -29,6 +29,6 @@ def answer():
     raise_me('')
 ```
 ```shell
-cd /Your-Path/Leitexc
-python3.11 level/simple/S-01.py
+cd /Your-Path/Leitexc/
+python3.11 -m level.simple.S-01
 ```
