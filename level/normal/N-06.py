@@ -16,4 +16,4 @@ def raise_me(alpha: list[list]):
 @check
 def answer():
     # write your answer here.
-    raise_me([[], []])
+    raise_me(...)
