@@ -19,9 +19,9 @@ def _success(err: Exception, lineno: int, line: str):
 
 def _failed():
     print(
-        f"{'─' * 64}\n",
-        f"\033[1;41m{'| Failed |':^64}\033[0m\n",
-        f"{'─' * 64}\n",
+        f"{'─' * 64}",
+        f"\033[1;41m{'| Failed |':^64}\033[0m",
+        f"{'─' * 64}",
         end='\n', sep='\n'
     )
 
