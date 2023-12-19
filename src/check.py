@@ -3,7 +3,7 @@ from traceback import extract_tb
 from sys import exc_info
 
 
-def _success(err: Exception, lineno: int, line: str):
+def _success(err: BaseException, lineno: int, line: str):
     print(
         f"{'─' * 64}",
         f"\033[1;46m{'| Success |':^64}\033[0m",
@@ -30,7 +30,7 @@ def check(func: Callable[[], None]):
     """虽然叫check但是还顺带包含了run的功能"""
     try:
         func()
-    except Exception as err:
+    except BaseException as err:
         *_, traceback = exc_info()
         for tb in reversed(extract_tb(traceback)):
             if tb.name == 'raise_me':
