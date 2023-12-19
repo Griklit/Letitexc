@@ -1,11 +1,9 @@
-"""
-难度: 2 未完成
-"""
 from src import check
 
 
 def raise_me(alpha):
-    ...
+    if alpha == 2:
+        assert alpha == 2
 
 
 @check
