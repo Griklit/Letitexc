@@ -24,7 +24,7 @@ def run_container(code_file_path: str) -> bytes:
     :return: 运行结果
     """
     try:
-        ret = docker_client.containers.run_container(
+        ret = docker_client.containers.run(
             # 执行参数
             PYTHON_IMAGE, 'timeout 10 python /home/letitexc.py', init=True,
             volumes={code_file_path: {'bind': '/home/letitexc.py', 'mode': 'ro'}},
